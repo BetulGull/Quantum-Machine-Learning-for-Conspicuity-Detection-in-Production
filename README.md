@@ -51,7 +51,7 @@ If you need help with the project, please refer to the documentation and tutoria
 This project is maintained and contributed by:
 
 - Betül Gül (eng.betulgul@gmail.com)
-
+- Jessica Omuna Anabor 
 ## Team Information
 
 **Team Member 1:**
