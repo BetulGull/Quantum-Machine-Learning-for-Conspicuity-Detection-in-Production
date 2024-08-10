@@ -63,4 +63,4 @@ This project is maintained and contributed by:
 - Womanium Program Enrollment ID: WQ24-WStowgJdXd9cc0i
 
 ## Presentation Slides
-https://www.canva.com/design/DAGNFQPk_jg/KP7mG-XLC4L2ta6g9nh4-w/view?utm_content=DAGNFQPk_jg&utm_campaign=designshare&utm_medium=link&utm_source=editor
+https://www.canva.com/design/DAGNT_Nw_Qs/qKLHoUsYONmbQjA5onXAHQ/view?utm_content=DAGNT_Nw_Qs&utm_campaign=designshare&utm_medium=link&utm_source=editor
