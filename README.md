@@ -38,10 +38,15 @@ After implementing QNNs, the next step is to compare their performance against c
 
 ## Dataset
 
-For Task 3 (QNNs), we used two datasets:
+For this project, we used three datasets across different tasks:
 
 - **Detecting Anomalies in Wafer Production**: This dataset is particularly relevant to the semiconductor industry, where improvements in wafer production processes are critical.
 - **MNIST Dataset**: We also used the MNIST dataset, a well-known benchmark in machine learning, to validate our model's learning capability. The model demonstrated good learning performance on the MNIST dataset, confirming its effectiveness.
+- **TIG Alüminyum 5083 Dataset (Task 5)**: For Task 5, we utilized the TIG (Tungsten Inert Gas) Alüminyum 5083 dataset. This dataset is critical for analyzing the welding process of the Alüminyum 5083 alloy, commonly used in marine and industrial applications due to its excellent corrosion resistance and high strength. By applying quantum machine learning models, we aimed to detect defects and anomalies in the welding process, improving the quality control of production.
+
+### TIG Alüminyum 5083 Dataset (Task 5)
+
+This dataset contains detailed information about the welding parameters, temperature readings, and structural integrity of the Alüminyum 5083 alloy during the TIG welding process. The data is crucial for understanding and optimizing welding parameters to ensure high-quality welds, minimizing defects such as cracks and porosity. The integration of quantum machine learning models aimed to enhance the detection of these defects by analyzing the complex relationships between the variables in the dataset.
 
 ## Reducing the Size of the Training Dataset
 
@@ -67,6 +72,14 @@ The hybrid model combines classical convolutional layers with a quantum layer. T
 
 After training, the model's performance is evaluated on the validation set. This assessment provides insight into the model's ability to generalize to new data, and helps identify areas for improvement.
 
+### MNIST Performance:
+- The model demonstrated good learning on the MNIST dataset, achieving high accuracy and strong performance metrics across all evaluation criteria.
+
+### Wafer Production Performance:
+- The results were promising, though further tuning and optimization are required to fully harness the quantum approach's potential.
+
+### TIG Alüminyum 5083 Performance (Task 5):
+- The application of the model to the TIG Alüminyum 5083 dataset showed potential in identifying welding defects. The quantum-classical hybrid model was particularly effective in recognizing subtle patterns in the data that are critical for ensuring the structural integrity of welded components.
 
 ## Visualizing Training Accuracy
 
@@ -93,3 +106,4 @@ For assistance with the project, refer to the documentation and tutorials for Pe
 ## Presentation Slides
 
 You can view our presentation slides [here](https://www.canva.com/design/DAGNT_Nw_Qs/qKLHoUsYONmbQjA5onXAHQ/view?utm_content=DAGNT_Nw_Qs&utm_campaign=designshare&utm_medium=link&utm_source=editor).
+
