@@ -1,66 +1,95 @@
-# Conspicuity Detection in Production Using Hybrid Quantum Computing
+# Quantum Machine Learning for Conspicuity Detection in Production
 
 ## Project Overview
 
-This project focuses on conspicuity detection in production, enabling the identification of improvement measures for individual work steps or sub-processes at an early stage, thereby optimizing the production process. By analyzing process data, such as image data or time series, we aim to uncover deviations and weak points in production. Classical methods for analyzing such data are very time-consuming.
+This project aims to optimize the production process by detecting deviations and weak points through conspicuity detection. By analyzing process data such as image data or time series, we identify areas for improvement within production workflows. Traditional analysis methods are often time-consuming, so this project explores the potential of hybrid quantum computing to accelerate these processes. Our primary goal is to implement hybrid quantum algorithms and benchmark them rigorously against classical approaches, including machine learning and statistical methods.
 
-To address this, our project explores the potential of hybrid quantum computing to accelerate the process. Our primary focus lies in implementing the necessary hybrid quantum algorithms and rigorously benchmarking them against classical approaches, including machine learning and statistical methods.
+## Why This Project is Useful
 
-## Why the Project is Useful
-
-Detecting anomalies and weak points in production processes early on can significantly enhance efficiency and reduce costs. Hybrid quantum computing has the potential to process and analyze large datasets much faster than classical methods, leading to quicker identification and resolution of issues, thereby improving overall productivity and quality in production.
+Detecting anomalies and weak points in production processes at an early stage can significantly enhance efficiency and reduce costs. Hybrid quantum computing has the potential to process and analyze large datasets much faster than classical methods, enabling quicker identification and resolution of issues. This, in turn, improves overall productivity and quality in production environments.
 
 ## Getting Started
 
-### Step 1: Familiarization with PennyLane and JAX
+### Step 1: Familiarize Yourself with PennyLane and JAX
 
-Initially, you need to familiarize yourself with PennyLane and its integration with JAX. To do this:
+Before diving into the project, it's essential to understand the tools and frameworks we'll be using:
 
-- Review the documentation and tutorial materials for PennyLane and JAX.
-- Implement and present the PennyLane x JAX tutorial.
+- **PennyLane**: A library for quantum machine learning, quantum computing, and quantum chemistry.
+- **JAX**: A library for high-performance machine learning research.
+
+**Action Items:**
+
+1. Review the documentation and tutorial materials for PennyLane and JAX.
+2. Implement and present the PennyLane x JAX tutorial to gain practical experience.
 
 ### Step 2: Implementing Quantum Neural Networks (QNNs)
 
-We will tackle Quantum Neural Networks (QNNs) with different scaling approaches. In this step:
+In this step, you will develop Quantum Neural Networks (QNNs) with various scaling approaches:
 
-- Develop QNN prototypes using PennyLane and JAX.
-- Present the results using standard metrics (accuracy, precision, recall, F1 score) and visualization techniques.
+1. Develop QNN prototypes using PennyLane and JAX.
+2. Present the results using standard metrics (accuracy, precision, recall, F1-score) and visualization techniques.
 
 ### Step 3: Benchmarking Against Classical Methods
 
-Finally, we will compare the performance of hybrid quantum algorithms with classical machine learning and statistical methods:
+After implementing QNNs, the next step is to compare their performance against classical machine learning and statistical methods:
 
-- Benchmark the hybrid quantum algorithms against classical methods.
-- Visualize and compare the performance metrics.
+1. Benchmark the hybrid quantum algorithms against classical methods.
+2. Visualize and compare the performance metrics.
 
 ## Dataset
 
-We will be using the **Detecting Anomalies in Wafer Production** dataset for Task 3 (QNNs). This unique dataset is crucial as the semiconductor industry is heavily invested in improving wafer production processes, positioning our project at the forefront of advancements in this sector.
+For Task 3 (QNNs), we used two datasets:
 
-## Results
+- **Detecting Anomalies in Wafer Production**: This dataset is particularly relevant to the semiconductor industry, where improvements in wafer production processes are critical.
+- **MNIST Dataset**: We also used the MNIST dataset, a well-known benchmark in machine learning, to validate our model's learning capability. The model demonstrated good learning performance on the MNIST dataset, confirming its effectiveness.
 
-- Detailed results and visualizations will be available in the `results` directory.
-- Standard metrics used for evaluation include accuracy, precision, recall, and F1-score.
+## Reducing the Size of the Training Dataset
+
+To manage the dataset size and speed up the training process, we reduced the number of images per class. This was achieved by downsampling the majority classes to create a more balanced dataset, which is crucial for avoiding model bias towards more frequent classes.
+
+## Splitting the Dataset into Training and Validation Sets
+
+We split the reduced dataset into training and validation sets using an 80-20 split. This step ensures the model is trained and validated on independent sets of data, providing a more accurate assessment of its performance.
+
+## Preparing Data for Model Training
+
+Data preprocessing involved setting up image transformations using `torchvision`. These transformations include center cropping, converting images to tensors, and normalizing them, which helps standardize the input data and facilitates effective model learning.
+
+## Defining the Quantum Circuit
+
+A key component of the project is the definition of the quantum circuit, implemented using the Pennylane library. The quantum node (qnode) is created with angle embeddings and basic entangler layers, which process the input data and return Pauli-Z measurements. This circuit is then integrated with PyTorch, enabling a hybrid quantum-classical machine learning approach.
+
+## Constructing the Hybrid Quantum-Classical Model
+
+The hybrid model combines classical convolutional layers with a quantum layer. The classical layers process image data, and the quantum layer applies quantum computations to the processed data. Finally, fully connected layers perform classification based on the quantum layer’s output.
+
+## Evaluating Model Performance
+
+After training, the model's performance is evaluated on the validation set. This assessment provides insight into the model's ability to generalize to new data, and helps identify areas for improvement.
+
+
+## Visualizing Training Accuracy
+
+The training accuracy is visualized by plotting accuracy over epochs, which helps analyze the model’s learning curve and the effectiveness of the training process.
+
+## Conclusion
+
+In tackling class imbalance, we reduced the dataset by downsampling the majority classes, ensuring a balanced dataset to prevent bias in model predictions. Although accuracy was used as a validation metric, we remained aware of its limitations, especially in the context of class imbalance. Alternative approaches such as k-fold cross-validation and stratified splitting were considered, but a simpler split was chosen due to time constraints. Throughout the project, we were vigilant in monitoring for overfitting and underfitting, and made careful decisions about model complexity to balance these concerns.
+
+The quantum aspect of the project relied heavily on the concept of an ansatz—a parameterized quantum circuit within the hybrid model. The choice of ansatz was critical, as it influenced the model's ability to capture complex patterns in the data.
 
 ## Getting Help
 
-If you need help with the project, please refer to the documentation and tutorials for PennyLane and JAX. Additionally, you can reach out to the project maintainers for assistance.
+For assistance with the project, refer to the documentation and tutorials for PennyLane and JAX. You can also contact the project maintainers:
+
+- **Betül Gül** (eng.betulgul@gmail.com)
+- **Jessica Omuna Anabor**
 
 ## Maintainers and Contributors
 
-This project is maintained and contributed by:
-
-- Betül Gül (eng.betulgul@gmail.com)
-- Jessica Omuna Anabor 
-## Team Information
-
-**Team Member 1:**
-- Full Name: Betül Gül
-- Womanium Program Enrollment ID: WQ24-zlmRFieHjeFCWok
-
-**Team Member 2:**
-- Full Name: Jessica Omuna Anabor 
-- Womanium Program Enrollment ID: WQ24-WStowgJdXd9cc0i
+- **Betül Gül** - Womanium Program Enrollment ID: WQ24-zlmRFieHjeFCWok
+- **Jessica Omuna Anabor** - Womanium Program Enrollment ID: WQ24-WStowgJdXd9cc0i
 
 ## Presentation Slides
-https://www.canva.com/design/DAGNT_Nw_Qs/qKLHoUsYONmbQjA5onXAHQ/view?utm_content=DAGNT_Nw_Qs&utm_campaign=designshare&utm_medium=link&utm_source=editor
+
+You can view our presentation slides [here](https://www.canva.com/design/DAGNT_Nw_Qs/qKLHoUsYONmbQjA5onXAHQ/view?utm_content=DAGNT_Nw_Qs&utm_campaign=designshare&utm_medium=link&utm_source=editor).
