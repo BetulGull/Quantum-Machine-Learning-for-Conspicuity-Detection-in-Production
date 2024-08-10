@@ -35,7 +35,7 @@ Finally, we will compare the performance of hybrid quantum algorithms with class
 
 ## Dataset
 
-We will be using the **Detecting Anomalies in Wafer Production** dataset, compiled by Fraunhofer. This unique dataset is crucial as the semiconductor industry is heavily invested in improving wafer production processes, positioning our project at the forefront of advancements in this sector.
+We will be using the **Detecting Anomalies in Wafer Production** dataset for Task 3 (QNNs). This unique dataset is crucial as the semiconductor industry is heavily invested in improving wafer production processes, positioning our project at the forefront of advancements in this sector.
 
 ## Results
 
