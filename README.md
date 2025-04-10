@@ -96,12 +96,10 @@ The quantum aspect of the project relied heavily on the concept of an ansatz—a
 For assistance with the project, refer to the documentation and tutorials for PennyLane and JAX. You can also contact the project maintainers:
 
 - **Betül Gül** (eng.betulgul@gmail.com)
-- **Jessica Omuna Anabor**
 
 ## Maintainers and Contributors
 
 - **Betül Gül** - Womanium Program Enrollment ID: WQ24-zlmRFieHjeFCWok
-- **Jessica Omuna Anabor** - Womanium Program Enrollment ID: WQ24-WStowgJdXd9cc0i
 
 ## Presentation Slides
 
